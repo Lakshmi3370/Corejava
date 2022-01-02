@@ -1,0 +1,28 @@
+package com.xworkz.examples;
+
+public class Array {
+	
+	public static void main(String[] args) {
+	
+	//to store different data type in single variable, using object array:
+		Object obj[] = new Object[5];
+		obj[0] = "Sindhu";
+		obj[1] = 101;
+		obj[2] = 24;
+		obj[3] = 34000.00;
+		obj[4] = "Bangalore";
+		
+		int index1 = obj.length;
+		System.out.println("Array length is " +index1);
+		
+		System.out.println();
+		
+		for(int index=0; index<obj.length; index++) {
+		System.out.println(obj[index]);
+	
+
+		
+		}
+	}
+
+	}
