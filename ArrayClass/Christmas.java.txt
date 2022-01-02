@@ -1,0 +1,49 @@
+package com.xworkz.examples;
+
+import java.util.Objects;
+
+public class Christmas extends Object{
+	
+  private static final Christmas obj = null;
+    float date;
+    int noOfDays;
+    
+   public Christmas (float date, int noOfDays) {
+	   this.date=date;
+	   this.noOfDays=noOfDays;
+   }
+	   public String toString() {
+		   return this.getClass().getSimpleName()+" date " +date+ "\nNo Of Days "+noOfDays;
+		 
+	   }
+	   
+	   public int hashCode() {
+		   return Objects.hash(date,noOfDays);
+	   }
+	   
+	   public boolean equals(Object obj) {
+		   if(obj!=null) {
+			   return true;
+		   }else
+			   if(obj instanceof Christmas) {
+				   Christmas ch = (Christmas) obj;
+				    return this.date==ch.date && this.noOfDays==ch.noOfDays;
+			   }
+			   else {
+				   return false;
+			   }
+		  
+			   }
+	   
+	   }
+
+	   
+
+	
+	 
+
+ 
+
+
+
+
